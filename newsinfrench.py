@@ -9,6 +9,7 @@ import json
 import time
 import boto3
 import urllib
+from params import *
 
 #from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.schedulers.blocking import BlockingScheduler
@@ -20,13 +21,6 @@ scheduler = BlockingScheduler()
 #scheduler.start()
                 
 
-
-username = 'whs2k'
-password = 'testtest'
-access_key_id = 'AKIAI25XGHU5WOAWDMLQ'
-access_key = '7aaV43JyeJPCi/L9o58kUQVN5bJKEltnq9WDQUvv'
-bucket_name = 'news-in-french'
-filename = 'newsfrench.mp3'
 
 app=Flask(__name__)
 
