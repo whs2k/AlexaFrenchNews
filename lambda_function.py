@@ -1,6 +1,7 @@
 from __future__ import print_function
 import random
 import urllib.request
+
 CardTitle= "News in slow French"
 # --------------- Helpers that build all of the responses ----------------------
 #def build_speechlet_response(title, output, reprompt_text, should_end_session):
@@ -21,7 +22,7 @@ def build_speechlet_response(output, reprompt_text, should_end_session,dir):
         },
         'reprompt': {
             'outputSpeech': {
-                'type': 'PlainText',
+                'type': "PlainText",
                 'text': reprompt_text
             }
         },
@@ -36,7 +37,7 @@ def build_speechlet_response(output, reprompt_text, should_end_session,dir):
 				"stream": 
 				{
 					"token": "This-is-the-audio-token",
-					"url": "https://s3-us-west-2.amazonaws.com/news-in-french/newsfrench.mp3",
+					"url": "https://s3-eu-west-1.amazonaws.com/newsinslowfrench/newsfrench.mp3",
 					"offsetInMilliseconds": 0
 				}
 			}
